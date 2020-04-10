@@ -6,11 +6,20 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "dev": "tsc -w"
+    "dev": "tsc -w",
+    "check": "gts check",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "yarn run compile",
+    "pretest": "yarn run compile",
+    "posttest": "yarn run check"
   },
   "devDependencies": {
     "tslint": "^6.1.1",
     "tslint-config-airbnb": "^5.11.2",
-    "typescript": "^3.8.3"
+    "typescript": "~3.8.0",
+    "gts": "^2.0.0",
+    "@types/node": "^10.0.3"
   }
 }
