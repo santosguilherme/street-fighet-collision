@@ -3,5 +3,14 @@
   "version": "1.0.0",
   "repository": "git@github.com:santosguilherme/street-fighet-collision.git",
   "author": "Guilherme Santos <sntguilherme@gmail.com>",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc -w"
+  },
+  "devDependencies": {
+    "tslint": "^6.1.1",
+    "tslint-config-airbnb": "^5.11.2",
+    "typescript": "^3.8.3"
+  }
 }
